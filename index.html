@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>狗老师的作业</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="http://vanggame.ufile.ucloud.com.cn/junlin/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				setSize();
+				$(window).resize(function() {
+					setSize();
+				});
+			});
+
+			function setSize() {
+				var imgW = 2500;
+				var imgH = 1447;
+				var winW = $(window).width();
+				var winH = $(window).height();
+				var scaleW = winW / imgW;
+				var scaleH = winH / imgH;
+				var fixScale = Math.max(scaleW, scaleH);
+				var setW = imgW * fixScale;
+				var setH = imgH * fixScale;
+				var moveX = Math.floor((winW - setW) / 2);
+				var moveY = Math.floor((winH - setH) / 2);
+				$('#bg').css({
+					'width': setW,
+					'height': setH,
+					'left': moveX,
+					'top': moveY
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--背景图-->
+		<img src="http://www.kotonohanoniwa.jp/common/top_bg.jpg" width="100%" height="100%" id="bg">
+		<!--导航栏-->
+		<nav id="top_nav">
+			<ul>
+				<li class="tn1">
+					<a href="http://www.kotonohanoniwa.jp/news/">最新情報</a>
+				</li>
+				<li class="tn2">
+					<a href="http://www.kotonohanoniwa.jp/page/product.html">作品紹介</a>
+				</li>
+				<li class="tn3">
+					<a href="http://www.kotonohanoniwa.jp/page/characters.html">登場人物</a>
+				</li>
+				<li class="tn4">
+					<a href="http://www.kotonohanoniwa.jp/page/staff.html">スタッフ</a>
+				</li>
+				<li class="tn5">
+					<a href="http://www.kotonohanoniwa.jp/page/theater.html">劇場情報</a>
+				</li>
+				<li class="tn6">
+					<a href="http://www.kotonohanoniwa.jp/page/item.html">関連商品</a>
+				</li>
+				<li class="tn7">
+					<a class="youtube cboxElement" href="http://www.youtube.com/embed/udDIkl6z8X0?rel=0&amp;autoplay=1&amp;theme=dark&amp;autohide=1&amp;start=0">予告編</a>
+				</li>
+				<li class="tn8">
+					<a href="http://www.kotonohanoniwa.jp/special/">スペシャル</a>
+				</li>
+			</ul>
+		</nav>
+		<!--右边导航-->
+		<div id="top_header">
+			<div class="top_logo">
+				<a id=""></a>
+			</div>
+			<div class="top_links">
+				<p class="top_fb_link">
+					<a target="_blank" href="https://www.facebook.com/shinkaiworks/">制作日誌更新中 Facebook</a>
+				</p>
+				<p class="top_tw_link">
+					<a target="_blank" href="https://twitter.com/shinkai_works">Twitter</a>
+				</p>
+			</div>
+			<div class="top_news">
+				<h2 class="bo">最新情報</h2>
+				<div class="flexcroll">
+					<ul class="news_ul">
+						<li>
+							<p>2016/10/04</p>
+							<p class="news-content">瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜</p>
+						</li>
+						<li>
+							<p>2016/10/04</p>
+							<p class="news-content">瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜</p>
+						</li>
+						<li>
+							<p>2016/10/04</p>
+							<p class="news-content">瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜</p>
+						</li>
+						<li>
+							<p>2016/10/04</p>
+							<p class="news-content">瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜</p>
+						</li>
+						<li>
+							<p>2016/10/04</p>
+							<p class="news-content">瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜瓜</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section>
+			<p class="disc2"><img src="http://www.kotonohanoniwa.jp/common/disc2.png" alt="『秒速5センチメートル』『星を追う子ども』新海誠監督最新作 5.31劇場公開"></p>
+			<p class="disc3">
+				<a target="_blank" href="http://ddnavi.com/feature/158839/"><img src="http://www.kotonohanoniwa.jp/common/novel_kotonoha_off.png" alt="小説版 言の葉の庭 特設サイト"></a>
+			</p>
+		</section>
+		<!--底部logo-->
+		<footer id="top_footer">
+			<p id="top_cwf_link">
+				<a target="_blank" href="http://www.cwfilms.jp/"><img src="http://www.kotonohanoniwa.jp/common/cwf_link.png" alt="CoMix Wave Films"></a>
+			</p>
+			<p id="top_contact">
+				<a href="mailto:info@cwfilms.jp">＜お問合せ＞</a>
+			</p>
+			<p id="top_copy">cMakoto Shinkai / CoMix Wave Films</p>
+		</footer>
+	</body>
+
+</html>
